@@ -28,3 +28,8 @@ def test_hello_digital_ocean(client):
     response = client.get('/digital-ocean')
     assert response.status_code == 200
     assert b'Hello, Digital Ocean!' in response.data
+
+
+def test_hello_linux(client):
+    response = client.get('/linux')
+    assert response.status_code == 200
