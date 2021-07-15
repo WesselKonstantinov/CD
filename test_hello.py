@@ -33,3 +33,4 @@ def test_hello_digital_ocean(client):
 def test_hello_linux(client):
     response = client.get('/linux')
     assert response.status_code == 200
+    assert b'Hello, Linux!' in response.data
