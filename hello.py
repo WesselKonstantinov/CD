@@ -16,3 +16,8 @@ def hello_github_actions():
 @app.route('/digital-ocean')
 def hello_digital_ocean():
     return '<p>Hello, Digital Ocean!</p>'
+
+
+@app.route('/linux')
+def hello_linux():
+    return '<p>Hello, Linux!</p>'
